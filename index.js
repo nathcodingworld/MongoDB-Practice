@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb";
-import { create_part2 } from "./create.js";
+import { create_part3 as create } from "./create.js";
 
 
 (async()=>{
@@ -8,7 +8,9 @@ import { create_part2 } from "./create.js";
         await client.connect()
         console.log("connected to local database");
       
-        // await create_part2(client)
+     
+        // await create(client)
+
     } catch (error) {
         console.log(error);
     } finally {
