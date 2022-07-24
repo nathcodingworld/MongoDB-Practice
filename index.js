@@ -1,5 +1,6 @@
 import { MongoClient } from "mongodb";
-import { create_part3 as create } from "./create.js";
+import { create_part2 as create } from "./create.js";
+import read from "./read.js"
 
 
 (async()=>{
@@ -10,6 +11,9 @@ import { create_part3 as create } from "./create.js";
       
      
         // await create(client)
+        // await read(client)
+
+
 
     } catch (error) {
         console.log(error);

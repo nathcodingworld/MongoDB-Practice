@@ -1,3 +1,4 @@
+import cars from "./cars.js";
 
 
 export async function create_part1(client) {
@@ -6,7 +7,7 @@ export async function create_part1(client) {
 }
 
 export async function create_part2(client) {
-    const result = await client.db("practice").collection("c2").insertMany([{_id: 10, city:"london"}, {_id: 10, city:"paris"},{nation: "UK"}],{ordered: false})
+    const result = await client.db("practice").collection("c4").insertMany(cars,{ordered: false})
     console.log(result);
 }
 
